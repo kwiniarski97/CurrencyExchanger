@@ -12,8 +12,8 @@
     {
         public Transaction(string @base, string target)
         {
-            this.Base = @base;
-            this.Target = target;
+            this.Base = @base.ToUpper();
+            this.Target = target.ToUpper();
         }
 
         public string Base { get; set; }
